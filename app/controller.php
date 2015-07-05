@@ -4,8 +4,6 @@ use app\view as View;
 use helpers\session as Session;
 
 class Controller {
-	use Session;
-
 	public $view;
 	public $language;
 	public $data;
