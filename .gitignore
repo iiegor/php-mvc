@@ -4,3 +4,4 @@ node_modules
 bundles/
 config/environment.ini
 .ftppass
+tmp/*
