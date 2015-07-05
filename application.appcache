@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# 19240
+
+# Explicitly cached 'master entries'.
+CACHE:
+images/favicon.ico
+images/logo.svg
+bundles/app.[hash].js
+bundles/bundle.[hash].js
+bundles/style.[hash].css
+
+# Resources that require the user to be online.
+NETWORK:
+/api

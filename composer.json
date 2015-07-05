@@ -1,0 +1,23 @@
+{
+    "name": "underc0de/kekofan",
+    "description": "Kekofan website.",
+    "homepage": "http://github.com/Kekocity/KekofanV2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iegor Azuaga",
+            "email": "dextrackmedia@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "aheinze/cockpit": "0.12.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/",
+            "controllers\\": "app/controllers",
+            "helpers\\": "app/helpers"
+        }
+    }
+}

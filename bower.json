@@ -1,0 +1,19 @@
+{
+  "name": "kekofan",
+  "version": "0.2.7",
+  "homepage": "https://github.com/Kekocity/KekofanV2",
+  "authors": [
+    "underc0de <iegormundo@hotmail.com>"
+  ],
+  "description": "Kekofan webpage.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
