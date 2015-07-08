@@ -15,7 +15,8 @@ var
 ;
 
 var
-	dev        = false,
+	args       = process.argv.slice(2),
+	dev        = args[1] == "--dev" ? true : false,
 	env        = ini.parse(fs.readFileSync('./config/environment.ini', 'utf-8')),
 	last_build = env.Application['app_build'],
 	build      = Math.random().toString(36).substring(7)
@@ -82,14 +83,14 @@ gulp.task('only-ui', function() {
 			'js/*.js',
 			'js/elements/*.js'
 		])
-		.pipe(concat('bundle.' + last_build + '.js'))
+		.pipe(concat('app.' + last_build + '.js'))
 		.pipe($.uglify({outSourceMap: false}))
 		.pipe(gulp.dest('bundles/'))
 });
 
 gulp.task('watch', function() {
   gulp.watch('css/**/*.less', ['less']);
-  gulp.watch('js/*.js', ['only-ui']);
+  gulp.watch(['js/*.js', 'js/elements/**/*.js', 'js/templates/**/*.tpl'], ['only-ui']);
 });
 //-- DEVELOPMENT USAGE --//
 
